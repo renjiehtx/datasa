@@ -1,34 +1,81 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      首页
+      <ion-searchbar placeholder="Filter Schedules"></ion-searchbar>
+      <ion-row>
+          <ion-col size="4">
+              <ion-button>
+                  <ion-icon slot="start" name="star"></ion-icon>
+                 推荐
+                </ion-button>
+          </ion-col>
+          <ion-col size="4">
+              <ion-button>
+                  热榜
+                  <ion-icon slot="start" name="star"></ion-icon>
+                </ion-button>  
+          </ion-col>
+          <ion-col size="4">
+              <ion-button>
+                  <ion-icon slot="start" name="star"></ion-icon>
+                  关注
+                </ion-button>
+          </ion-col>
+        </ion-row>   
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
+    <ion-card-header>                      
+      <ion-card-title>PK</ion-card-title>
+      <ion-card-title>大学毕业生</ion-card-title>
     </ion-card-header>
-  
     <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      非985、211大学毕业生选择考公务员是一条好的出路吗？
     </ion-card-content>
   </ion-card>
-  
+
+  <ion-card>
+      <ion-card-header>                      
+        <ion-card-title>PK</ion-card-title>
+        <ion-card-title>学历</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        博士研究生受热捧导致考研人数暴增？
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>                         
+          <ion-card-title>PK</ion-card-title>
+          <ion-card-title>就业行情</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+         高技能工人始终是市场短缺的？
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+          <ion-card-header>                      
+            <ion-card-title>PK</ion-card-title>
+            <ion-card-title>名校毕业生</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+              985、211毕业生真的好就业吗？
+          </ion-card-content>
+        </ion-card>
+
   <ion-card>
     <ion-item>
-      <ion-icon name="pin" slot="start"></ion-icon>
-      <ion-label>ion-item in a card, icon left, button right</ion-label>
+        <ion-icon name="hand"></ion-icon>
+      <ion-label>参与评论</ion-label>
       <ion-button fill="outline" slot="end">View</ion-button>
     </ion-item>
   
     <ion-card-content>
-      This is content, without any paragraph or header tags,
-      within an ion-card-content element.
+      本科双一流，研究生双非是怎样一种体验？
     </ion-card-content>
   </ion-card>
 </ion-content>
