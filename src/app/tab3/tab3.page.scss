@@ -1,3 +1,22 @@
-.my-custom-menu {
-    --width: 500px;
-  }
+
+.happyLogo{
+  width: 40px;
+  position: absolute;
+  top:10px;
+  left: 10px;
+}
+ion-title{
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.sadLogo{
+  width: 40px;
+  position: absolute;
+  top:10px;
+  right: 10px;
+}
+
+ion-avatar{
+  margin: 0 auto;
+}

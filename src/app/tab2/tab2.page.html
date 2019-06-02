@@ -1,81 +1,36 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-        <ion-searchbar placeholder="Filter Schedules"></ion-searchbar>
-    </ion-title>
+  <ion-toolbar color="dark">
+    <img ion-right src="assets/imgs/happy.png" class="happyLogo" />
+    <ion-title>分析结果</ion-title>
+    <img ion-right src="assets/imgs/sad.png" class="sadLogo" />
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-card>
-        <ion-item>
-            <ion-icon name="hand"></ion-icon>
-          <ion-label>参与评论</ion-label>
-          <ion-button fill="outline" slot="end">View</ion-button>
-        </ion-item>
-      
-        <ion-card-content>
-          本科双一流，研究生双非是怎样一种体验？
-        </ion-card-content>
-      </ion-card>
-
-      <ion-card>
-          <ion-item>
-              <ion-icon name="hand"></ion-icon>
-            <ion-label>参与评论</ion-label>
-            <ion-button fill="outline" slot="end">View</ion-button>
-          </ion-item>
-        
-          <ion-card-content>
-            本科双一流，研究生双非是怎样一种体验？
-          </ion-card-content>
-        </ion-card>
-
-        <ion-card>
-            <ion-item>
-                <ion-icon name="hand"></ion-icon>
-              <ion-label>参与评论</ion-label>
-              <ion-button fill="outline" slot="end">View</ion-button>
-            </ion-item>
-          
-            <ion-card-content>
-              本科双一流，研究生双非是怎样一种体验？
-            </ion-card-content>
-          </ion-card>
-
-          <ion-card>
-              <ion-item>
-                  <ion-icon name="hand"></ion-icon>
-                <ion-label>参与评论</ion-label>
-                <ion-button fill="outline" slot="end">View</ion-button>
-              </ion-item>
-            
-              <ion-card-content>
-                本科双一流，研究生双非是怎样一种体验？
-              </ion-card-content>
-            </ion-card>
-
-            <ion-card>
-                <ion-item>
-                    <ion-icon name="hand"></ion-icon>
-                  <ion-label>参与评论</ion-label>
-                  <ion-button fill="outline" slot="end">View</ion-button>
-                </ion-item>
-              
-                <ion-card-content>
-                  本科双一流，研究生双非是怎样一种体验？
-                </ion-card-content>
-              </ion-card>
-
-              <ion-card>
-                  <ion-item>
-                      <ion-icon name="hand"></ion-icon>
-                    <ion-label>参与评论</ion-label>
-                    <ion-button fill="outline" slot="end">View</ion-button>
-                  </ion-item>
-                
-                  <ion-card-content>
-                    本科双一流，研究生双非是怎样一种体验？
-                  </ion-card-content>
-                </ion-card>
+  <ion-card>
+    <ion-card-header color="primary">
+      <ion-card-title>PK</ion-card-title>
+      <ion-card-title>毕业之后去大公司上班是一个好的选择吗？</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ngx-charts-pie-chart [view]="view"
+      [scheme]="colorScheme"
+      [results]="single"
+      [animations]="animations"
+      [legend]="showLegend"
+      [legendTitle]="legendTitle"
+      [legendPosition]="legendPosition"
+      [explodeSlices]="explodeSlices"
+      [labels]="showLabels"
+      [doughnut]="doughnut"
+      [arcWidth]="arcWidth"
+      (legendLabelClick)="onLegendLabelClick($event)"
+      [gradient]="gradient"
+      [tooltipDisabled]="tooltipDisabled"
+      [tooltipText]="pieTooltipText"
+      (dblclick)="dblclick($event)"
+      (select)="select($event)">
+      </ngx-charts-pie-chart>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

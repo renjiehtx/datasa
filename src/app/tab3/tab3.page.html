@@ -1,12 +1,52 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      <ion-icon name="logo-github"></ion-icon>     
-    </ion-title>
+  <ion-toolbar color="dark">
+    <img ion-right src="assets/imgs/happy.png" class="happyLogo" />
+    <ion-title>个人中心</ion-title>
+    <img ion-right src="assets/imgs/sad.png" class="sadLogo" />
   </ion-toolbar>
 </ion-header>
 
 
-<ion-content>
-  
+
+<ion-header translucent no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="light">
+        <ion-icon slot="start" name="ios-arrow-back"></ion-icon>
+        Favorites
+      </ion-button>
+    </ion-buttons>
+    <ion-title>&nbsp;</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" src="../../assets/checkmark-filled.svg"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" slot="fixed">
+  <div class="card">
+    <div class="header">
+      <div class="avatar">
+        <ion-avatar>
+          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+        </ion-avatar>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="user-meta ion-text-center">
+        <h3 class="playername">任洁</h3>
+        <h5 class="country">郑州轻工业大学</h5>
+        <h6 class="ranking">国际教育学院</h6>
+      </div>
+
+      <ion-button expand="full" color="secondary">我的收藏</ion-button>
+      <ion-button expand="full" color="secondary">浏览历史</ion-button>
+      <ion-button expand="full" color="secondary">话题</ion-button>
+      <ion-button expand="full" color="secondary">系统设置</ion-button>
+      <ion-button expand="block" color="primary" (click)="logout()">退出账号</ion-button>
+
+    </div>
+  </div>
 </ion-content>
