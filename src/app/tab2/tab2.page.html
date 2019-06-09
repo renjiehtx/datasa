@@ -29,8 +29,20 @@
       [tooltipDisabled]="tooltipDisabled"
       [tooltipText]="pieTooltipText"
       (dblclick)="dblclick($event)"
-      (select)="select($event)">
+      (select)="onSelect($event)">
       </ngx-charts-pie-chart>
+    </ion-card-content>
+  </ion-card>
+
+    <ion-card *ngFor="let comment of comments">
+    <ion-item>
+      <ion-icon name="hand"></ion-icon>
+      <ion-label><span style="color: coral">{{comment.user}}</span>参与评论</ion-label>
+      <ion-button fill="outline" slot="end">查看</ion-button>
+    </ion-item>
+
+    <ion-card-content>
+        {{comment.comment}}
     </ion-card-content>
   </ion-card>
 </ion-content>
