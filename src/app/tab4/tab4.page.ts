@@ -15,6 +15,10 @@ export class Tab4Page {
 
   constructor(private router: Router) { }
 
+  search(){
+    this.router.navigateByUrl('/tabs/tab1');
+  }
+
 
 }
 

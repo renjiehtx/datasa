@@ -14,7 +14,7 @@ export class LoginPage implements OnInit {
   }
 
   login(){
-    this.router.navigateByUrl('/tabs');
+    this.router.navigateByUrl('/tabs/tab4');
     console.log("登录成功");
   }
 

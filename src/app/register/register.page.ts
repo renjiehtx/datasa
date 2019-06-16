@@ -14,7 +14,7 @@ export class RegisterPage implements OnInit {
   }
 
   register(){
-    this.router.navigateByUrl('/tabs');
+    this.router.navigateByUrl('/tabs/tab4');
     console.log("注册成功");
   }
 
